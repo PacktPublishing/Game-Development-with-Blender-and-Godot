@@ -10,8 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Chapter 9"
-run/main_scene="res://Scenes/World.tscn"
+config/name="Chapter 9 - Start"
 config/icon="res://icon.png"
 
 [physics]
