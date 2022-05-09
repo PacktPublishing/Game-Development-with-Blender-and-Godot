@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Chapter 9 - Finish"
+run/main_scene="res://Scenes/Game.tscn"
 config/icon="res://icon.png"
 
 [physics]
