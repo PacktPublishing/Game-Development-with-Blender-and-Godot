@@ -1,7 +1,0 @@
-[gd_resource type="SpatialMaterial" load_steps=2 format=2]
-
-[ext_resource path="res://Textures/Leaf_Texture.png" type="Texture" id=1]
-
-[resource]
-flags_transparent = true
-albedo_texture = ExtResource( 1 )
