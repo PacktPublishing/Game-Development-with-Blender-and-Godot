@@ -159,7 +159,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
 
 [node name="Columns" type="Spatial" parent="."]
-visible = false
 
 [node name="Column_Round" parent="Columns" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0.216 )
@@ -272,7 +271,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -5 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -5 )
 
 [node name="Rails" type="Spatial" parent="."]
-visible = false
 
 [node name="Rail_Corner" parent="Rails" instance=ExtResource( 8 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.5, 0, 2.5 )
@@ -308,7 +306,6 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.25, 
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.75, 0, 2.5 )
 
 [node name="SunkWalls" type="Spatial" parent="."]
-visible = false
 
 [node name="Wall24" parent="SunkWalls" instance=ExtResource( 5 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7, -2, 6 )
@@ -341,7 +338,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -2, 7 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -2, 7 )
 
 [node name="Props" type="Spatial" parent="."]
-visible = false
 
 [node name="Barrel" parent="Props" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13.8857, 0, 0 )
@@ -437,7 +433,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.59891, 0.350815, -2.54586 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.31131, 0.350815, -3.5054 )
 
 [node name="Rocks" type="Spatial" parent="."]
-visible = false
 
 [node name="RocksRight" parent="Rocks" instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6513, 0, 11.0445 )
@@ -446,7 +441,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6513, 0, 11.0445 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.12202, 0, 4.60326 )
 
 [node name="Sconces" type="Spatial" parent="."]
-visible = false
 
 [node name="Sconce" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.67768, 2, 0 )
@@ -462,18 +456,18 @@ transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 14.6434, 
 
 [node name="Dock" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.342893, 0, 0 )
-visible = false
 
 [node name="Dock_Long" parent="Dock" instance=ExtResource( 28 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, 5.5071 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, 5.5 )
 
 [node name="Dock_Stairs" parent="Dock" instance=ExtResource( 29 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1.46318, 8.952 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1.5, 8.9 )
 
 [node name="BoatWSail" parent="Dock" instance=ExtResource( 30 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.5, -1, 11 )
 
 [node name="MeshInstance" type="MeshInstance" parent="Dock"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 5, -1, 11 )
+visible = false
 mesh = SubResource( 1 )
 material/0 = null
