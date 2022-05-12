@@ -415,7 +415,7 @@ transform = Transform( 0.518853, 0.845215, -0.128077, -0.309354, 0.0459732, -0.9
 transform = Transform( 0.309681, 0, 0.950841, 0, 1, 0, -0.950841, 0, 0.309681, -0.331769, 0, 1.135 )
 
 [node name="Pot2_Broken" parent="Props" instance=ExtResource( 26 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.599, 0, -2.06477 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.599, 0.0200201, -2.06477 )
 
 [node name="Pot1_Broken" parent="Props" instance=ExtResource( 32 )]
 transform = Transform( -0.992454, 0, -0.122614, 0, 1, 0, 0.122614, 0, -0.992454, -2.25817, 0, -1.27256 )
