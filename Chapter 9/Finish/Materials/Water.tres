@@ -1,43 +1,8 @@
 [gd_resource type="ShaderMaterial" load_steps=2 format=2]
 
-[sub_resource type="Shader" id=1]
-code = "shader_type spatial;
-//render_mode unshaded;
-
-float hash(vec2 p) {
-  return fract(sin(dot(p * 17.17, vec2(14.91, 67.31))) * 4791.9511);
-}
-float noise(vec2 x) {
-  vec2 p = floor(x);
-  vec2 f = fract(x);
-  f = f * f * (3.0 - 2.0 * f);
-  vec2 a = vec2(1.0, 0.0);
-  return mix(mix(hash(p + a.yy), hash(p + a.xy), f.x),
-         mix(hash(p + a.yx), hash(p + a.xx), f.x), f.y);
-}
-float fbm(vec2 x) {
-  float height = 0.0;
-  float amplitude = 0.5;
-  float frequency = 3.0;
-  for (int i = 0; i < 6; i++){
-    height += noise(x * frequency) * amplitude;
-    amplitude *= 0.5;
-    frequency *= 2.0;
-  }
-  return height;
-}
-
-void vertex() {
-	float height = fbm(VERTEX.xz * 4.0);
-	
-  VERTEX.y += (height*0.5);
-COLOR.xyz = vec3(height);
-//  VERTEX.y += cos(VERTEX.x * height) * sin(VERTEX.z * height);
-}
-
-void fragment(){
-  ALBEDO = COLOR.xyz;
-}"
+[ext_resource path="res://Materials/cave-water.tres" type="Shader" id=1]
 
 [resource]
-shader = SubResource( 1 )
+shader = ExtResource( 1 )
+shader_param/color = Color( 0.188235, 0.705882, 0.823529, 0.443137 )
+shader_param/height_factor = 0.1

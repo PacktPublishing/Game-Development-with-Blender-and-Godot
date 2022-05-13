@@ -1,0 +1,21 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type spatial;
+
+uniform sampler2D wave_pattern;
+uniform vec4 color:hint_color;
+uniform float height_factor:hint_range(0,1.0) = 0.1;
+
+
+void vertex(){
+	vec4 wave = texture(wave_pattern, UV);
+	float displacement = sin(VERTEX.x * wave.x * TIME) + cos(VERTEX.z * wave.z *  TIME);
+	
+	VERTEX.y += displacement * height_factor;
+}
+
+void fragment(){
+	ALBEDO = color.rgb;
+	ALPHA = color.a;
+}"
