@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://Models/Architecture/Column_Round.glb" type="PackedScene" id=1]
 [ext_resource path="res://Models/Floor/Floor_Standard.tscn" type="PackedScene" id=2]
@@ -34,6 +34,7 @@
 [ext_resource path="res://Models/Pots/Pot1_Broken.glb" type="PackedScene" id=32]
 [ext_resource path="res://Models/Pots/Pot3_Broken.glb" type="PackedScene" id=33]
 [ext_resource path="res://Models/Bush/Bush_Round.glb" type="PackedScene" id=34]
+[ext_resource path="res://Materials/Water.tres" type="Material" id=35]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 20, 20 )
@@ -471,4 +472,4 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.5, -1
 [node name="Water" type="MeshInstance" parent="Dock"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, -1.25, 11 )
 mesh = SubResource( 1 )
-material/0 = null
+material/0 = ExtResource( 35 )

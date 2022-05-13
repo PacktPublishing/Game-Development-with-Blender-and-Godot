@@ -4,9 +4,8 @@
 code = "shader_type spatial;
 
 uniform sampler2D wave_pattern;
-uniform vec4 color:hint_color;
+uniform vec4 color:hint_color = vec4(0.19, 0.71, 0.82, 0.44);
 uniform float height_factor:hint_range(0,1.0) = 0.1;
-
 
 void vertex(){
 	vec4 wave = texture(wave_pattern, UV);

@@ -1,8 +1,14 @@
-[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
 
 [ext_resource path="res://Materials/cave-water.tres" type="Shader" id=1]
 
+[sub_resource type="OpenSimplexNoise" id=1]
+
+[sub_resource type="NoiseTexture" id=2]
+noise = SubResource( 1 )
+
 [resource]
 shader = ExtResource( 1 )
-shader_param/color = Color( 0.188235, 0.705882, 0.823529, 0.443137 )
+shader_param/color = Color( 0.188235, 0.709804, 0.819608, 0.439216 )
 shader_param/height_factor = 0.1
+shader_param/wave_pattern = SubResource( 2 )
