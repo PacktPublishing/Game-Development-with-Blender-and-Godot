@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Level-01.tscn" type="PackedScene" id=1]
+
+[node name="Game" type="Node"]
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.78031, 0.339541, -0.525193, 0, 0.839781, 0.542925, 0.625392, -0.42365, 0.65529, 0, 3, 8 )
+
+[node name="Level-01" parent="." instance=ExtResource( 1 )]
