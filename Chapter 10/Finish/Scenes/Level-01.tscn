@@ -22,8 +22,8 @@
 [ext_resource path="res://Models/Crate/Crate.glb" type="PackedScene" id=20]
 [ext_resource path="res://Models/Flags/Flag_Wall2.glb" type="PackedScene" id=21]
 [ext_resource path="res://Models/Cart/Cart.glb" type="PackedScene" id=22]
-[ext_resource path="res://Models/Candles/Candles_2.glb" type="PackedScene" id=23]
-[ext_resource path="res://Models/Candles/Candles_1.glb" type="PackedScene" id=24]
+[ext_resource path="res://Models/Candles/Candles_1.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Models/Candles/Candles_2.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Models/Statues/Statue_Stag.glb" type="PackedScene" id=25]
 [ext_resource path="res://Models/Pots/Pot2_Broken.glb" type="PackedScene" id=26]
 [ext_resource path="res://Models/Sconce/Sconce.glb" type="PackedScene" id=27]
@@ -399,14 +399,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0181231, 3, -2.80762 )
 [node name="Flag_Wall3" parent="Props" instance=ExtResource( 21 )]
 transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14.7737, 3, 4.79716 )
 
-[node name="Candles_2" parent="Props" instance=ExtResource( 23 )]
+[node name="Candles_6" parent="Props" instance=ExtResource( 24 )]
 transform = Transform( -0.968929, 0, -0.247337, 0, 1, 0, 0.247337, 0, -0.968929, 9.81401, 0, -0.13631 )
 
-[node name="Candles_3" parent="Props" instance=ExtResource( 23 )]
+[node name="Candles_5" parent="Props" instance=ExtResource( 24 )]
 transform = Transform( 0.0191451, 0, 0.999817, 0, 1, 0, -0.999817, 0, 0.0191451, 0.994772, 0, 1.92874 )
 
-[node name="Candles_1" parent="Props" instance=ExtResource( 24 )]
+[node name="Candles_4" parent="Props" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.30802, 0, 3.74279 )
+is_lit = true
 
 [node name="Statue_Stag" parent="Props" instance=ExtResource( 25 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3, 0, -1.36297 )
