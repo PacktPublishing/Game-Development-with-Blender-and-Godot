@@ -5,6 +5,6 @@
 [node name="Game" type="Node"]
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.78031, 0.339541, -0.525193, 0, 0.839781, 0.542925, 0.625392, -0.42365, 0.65529, 0, 3, 8 )
+transform = Transform( 0.583703, 0.607799, -0.538396, -0.0434899, 0.685527, 0.726747, 0.810801, -0.40079, 0.426578, 0, 5.0168, 9.79276 )
 
 [node name="Level-01" parent="." instance=ExtResource( 1 )]
