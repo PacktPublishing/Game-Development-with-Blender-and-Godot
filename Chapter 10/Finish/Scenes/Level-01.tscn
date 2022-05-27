@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Models/Architecture/Column_Round.glb" type="PackedScene" id=1]
 [ext_resource path="res://Models/Floor/Floor_Standard.glb" type="PackedScene" id=2]
@@ -35,6 +35,7 @@
 [ext_resource path="res://Models/Pots/Pot3_Broken.glb" type="PackedScene" id=33]
 [ext_resource path="res://Models/Bush/Bush_Round.glb" type="PackedScene" id=34]
 [ext_resource path="res://Materials/Water.tres" type="Material" id=35]
+[ext_resource path="res://default_env.tres" type="Environment" id=36]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 20, 20 )
@@ -447,15 +448,19 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.12202, 0, 4.60326 )
 
 [node name="Sconce5" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.67768, 2, 0 )
+is_lit = true
 
 [node name="Sconce6" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.05177, 2, -2.66926 )
+is_lit = true
 
 [node name="Sconce7" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 14.6434, 2, -2.66926 )
+is_lit = true
 
 [node name="Sconce8" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 14.6434, 2, 3.33074 )
+is_lit = true
 
 [node name="Dock" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.342893, 0, 0 )
@@ -478,5 +483,14 @@ material/0 = ExtResource( 35 )
 [node name="SpotLight" type="SpotLight" parent="."]
 transform = Transform( 0.5, 0.75, -0.433012, 0, 0.5, 0.866025, 0.866025, -0.433013, 0.25, 2, 5, 11 )
 light_color = Color( 0.839216, 0.835294, 0.556863, 1 )
+shadow_enabled = true
 spot_range = 20.0
 spot_angle = 55.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource( 36 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.09728, 2.7483, 0.888094 )
+visible = false
+light_color = Color( 0.839216, 0.835294, 0.556863, 1 )

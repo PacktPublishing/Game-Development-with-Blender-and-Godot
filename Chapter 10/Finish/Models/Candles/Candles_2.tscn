@@ -5,8 +5,9 @@
 
 [node name="Candles_2" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+is_lit = true
 
 [node name="OmniLight" type="OmniLight" parent="." index="1"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0 )
-visible = false
 light_color = Color( 0.839216, 0.835294, 0.556863, 1 )
+shadow_enabled = true
