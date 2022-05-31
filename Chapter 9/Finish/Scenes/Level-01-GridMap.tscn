@@ -400,13 +400,13 @@ transform = Transform( 0.999718, 0, -0.0237517, 0, 1, 0, 0.0237517, 0, 0.999718,
 transform = Transform( 0.99722, 0, 0.0745088, 0, 1, 0, -0.0745088, 0, 0.99722, 12.7746, 0, -3.72674 )
 
 [node name="Crate7" parent="Props" instance=ExtResource( 20 )]
-transform = Transform( 0.952332, 0, -0.305064, 0, 1, 0, 0.305064, 0, 0.952332, 13.313, 1, -3.8346 )
+transform = Transform( 0.952332, 0, -0.305064, 0, 1, 0, 0.305064, 0, 0.952332, 13.313, 0.825, -3.835 )
 
 [node name="Crate2" parent="Props" instance=ExtResource( 20 )]
 transform = Transform( 0.991282, 0, -0.131755, 0, 1, 0, 0.131755, 0, 0.991282, 11.6693, 0, 4.75379 )
 
 [node name="Crate3" parent="Props" instance=ExtResource( 20 )]
-transform = Transform( 0.712014, 0, 0.702165, 0, 1, 0, -0.702165, 0, 0.712014, 11.8842, 1, 5.25285 )
+transform = Transform( 0.712014, 0, 0.702165, 0, 1, 0, -0.702165, 0, 0.712014, 11.884, 0.825, 5.253 )
 
 [node name="Flag_Wall2" parent="Props" instance=ExtResource( 21 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0181231, 3, -2.80762 )
