@@ -10,4 +10,6 @@ script = ExtResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 visible = false
 light_color = Color( 0.839216, 0.835294, 0.556863, 1 )
+light_indirect_energy = 2.5
 shadow_enabled = true
+omni_range = 8.0
