@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Level-01.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Fonts/Kefario.otf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 29
+font_data = ExtResource( 2 )
 
 [node name="Game" type="Node"]
 
@@ -8,3 +13,29 @@
 transform = Transform( 0.777146, 0.342752, -0.527792, 0, 0.83867, 0.544639, 0.62932, -0.423264, 0.651769, 0, 3, 8 )
 
 [node name="Level-01" parent="." instance=ExtResource( 1 )]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="UI"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -79.0
+margin_top = -20.0
+text = "Roger That"
+
+[node name="Panel" type="Panel" parent="UI"]
+margin_right = 294.0
+margin_bottom = 389.0
+
+[node name="Label" type="Label" parent="UI/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 1 )
+text = "My dear Clara,
+
+A close friend of mine is in dire need of my help. I must leave immediately.
+
+I am leaving you a backpack by the decrepit cart. Inside, you’ll find the key to upstairs. Make yourself at home."
+autowrap = true
