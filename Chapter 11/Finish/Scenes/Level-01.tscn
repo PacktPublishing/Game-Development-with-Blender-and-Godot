@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Models/Architecture/Column_Round.glb" type="PackedScene" id=1]
 [ext_resource path="res://Models/Floor/Floor_Standard.glb" type="PackedScene" id=2]
@@ -36,6 +36,7 @@
 [ext_resource path="res://Models/Bush/Bush_Round.glb" type="PackedScene" id=34]
 [ext_resource path="res://Materials/Water.tres" type="Material" id=35]
 [ext_resource path="res://default_env.tres" type="Environment" id=36]
+[ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=37]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 20, 20 )
@@ -509,3 +510,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5, 0, 4 )
 extents = Vector3( 12, 5, 15 )
 interior = true
 data = SubResource( 2 )
+
+[node name="UI" parent="." instance=ExtResource( 37 )]
