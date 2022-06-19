@@ -1,15 +1,39 @@
-[gd_resource type="Theme" load_steps=6 format=2]
+[gd_resource type="Theme" load_steps=12 format=2]
 
 [ext_resource path="res://UI/dark-ui-checkbutton-off.png" type="Texture" id=1]
 [ext_resource path="res://UI/dark-ui-checkbutton-on.png" type="Texture" id=2]
 [ext_resource path="res://UI/dark-ui-checkbox-off.png" type="Texture" id=3]
 [ext_resource path="res://UI/dark-ui-radio-off.png" type="Texture" id=4]
 [ext_resource path="res://UI/dark-ui-radio-on.png" type="Texture" id=5]
+[ext_resource path="res://UI/dark-ui-checkbox-on.png" type="Texture" id=6]
+[ext_resource path="res://UI/dark-ui-vslider-grabber.png" type="Texture" id=7]
+[ext_resource path="res://UI/dark-ui-vslider-slider.png" type="Texture" id=8]
+[ext_resource path="res://UI/dark-ui-vslider-grabber-area.png" type="Texture" id=9]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 11, 22 )
+margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 13, 42 )
+margin_top = 7.0
+margin_bottom = 7.0
+expand_margin_left = 1.0
+expand_margin_right = 1.0
+expand_margin_top = 1.0
+expand_margin_bottom = 1.0
 
 [resource]
-CheckBox/icons/checked = null
+CheckBox/icons/checked = ExtResource( 6 )
 CheckBox/icons/radio_checked = ExtResource( 5 )
 CheckBox/icons/radio_unchecked = ExtResource( 4 )
 CheckBox/icons/unchecked = ExtResource( 3 )
 CheckButton/icons/off = ExtResource( 1 )
 CheckButton/icons/on = ExtResource( 2 )
+VSlider/icons/grabber = ExtResource( 7 )
+VSlider/icons/grabber_highlight = ExtResource( 7 )
+VSlider/styles/grabber_area = SubResource( 1 )
+VSlider/styles/grabber_area_highlight = SubResource( 1 )
+VSlider/styles/slider = SubResource( 2 )
