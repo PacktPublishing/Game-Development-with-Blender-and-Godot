@@ -51,6 +51,7 @@ margin_bottom = 8.0
 [node name="UI" type="CanvasLayer"]
 
 [node name="Panel" type="Panel" parent="."]
+visible = false
 margin_right = 600.0
 margin_bottom = 400.0
 rect_min_size = Vector2( 600, 400 )
