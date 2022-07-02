@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Models/Architecture/Column_Round.glb" type="PackedScene" id=1]
 [ext_resource path="res://Models/Floor/Floor_Standard.glb" type="PackedScene" id=2]
@@ -37,6 +37,7 @@
 [ext_resource path="res://Materials/Water.tres" type="Material" id=35]
 [ext_resource path="res://default_env.tres" type="Environment" id=36]
 [ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Models/Scrolls/Scroll.tscn" type="PackedScene" id=38]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 20, 20 )
@@ -451,6 +452,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.59891, 0.350815, -2.54586 )
 [node name="Bush_Round2" parent="Props" instance=ExtResource( 34 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.31131, 0.350815, -3.5054 )
 
+[node name="Scroll" parent="Props" instance=ExtResource( 38 )]
+transform = Transform( 0.773188, 0, 0.634177, 0, 1, 0, -0.634177, 0, 0.773188, 3.4136, -0.171678, 7.59644 )
+
 [node name="Rocks" type="Spatial" parent="."]
 
 [node name="RocksRight" parent="Rocks" instance=ExtResource( 10 )]
@@ -512,3 +516,4 @@ interior = true
 data = SubResource( 2 )
 
 [node name="UI" parent="." instance=ExtResource( 37 )]
+note_trigger = NodePath("../Props/Scroll")

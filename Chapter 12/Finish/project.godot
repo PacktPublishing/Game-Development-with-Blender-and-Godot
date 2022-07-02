@@ -27,4 +27,3 @@ common/enable_pause_aware_picking=true
 
 quality/filters/msaa=1
 quality/filters/use_debanding=true
-environment/default_environment="res://default_env.tres"
