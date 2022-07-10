@@ -9,7 +9,7 @@ const SPEED:= 5
 var path:= []
 var path_index:=0
 
-func _unhandled_input(event):
+func _input(event):
 	if event is InputEventMouseButton and event.button_index == 1:
 		find_path(event)
 
