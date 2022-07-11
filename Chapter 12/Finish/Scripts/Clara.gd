@@ -13,7 +13,9 @@ var is_moving:bool = false
 
 
 func _unhandled_input(event):
-	turn_to(event)
+	if event is InputEventMouseMotion:
+		turn_to(event)
+		
 	if event is InputEventMouseButton and event.button_index == 1:
 		find_path(event)
 
