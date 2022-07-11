@@ -13,7 +13,9 @@ var is_moving:bool = false
 
 
 func _unhandled_input(event):
-	turn_to(event)
+	if event is InputEventMouseMotion:
+		turn_to(event)
+		
 	if event is InputEventMouseButton and event.button_index == 1:
 		find_path(event)
 
@@ -34,9 +36,9 @@ func turn_to(event):
 	if is_moving:
 		return
 	
-	var look:Vector3 = get_destination(event) * Vector3(1,0,1) + Vector3(0, global_transform.origin.y, 0)
+	var direction:Vector3 = get_destination(event) * Vector3(1,0,1) + Vector3(0, global_transform.origin.y, 0)
 
-	look_at(look, Vector3.UP)
+	look_at(direction, Vector3.UP)
 
 func find_path(event):	
 	path = nav.get_simple_path(global_transform.origin, get_destination(event))
@@ -48,8 +50,8 @@ func move_along(path:Array):
 		$Clara/AnimationPlayer.play("Idle")
 		return
 	
-	$Clara/AnimationPlayer.play("Walk")
 	is_moving = true
+	$Clara/AnimationPlayer.play("Walk")
 	
 	var distance_to_next_step = global_transform.origin.distance_to(path[path_index])
 	var direction:Vector3 = path[path_index] - global_transform.origin
