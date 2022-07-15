@@ -30,7 +30,7 @@ func get_destination(event)->Vector3:
 	if result and result.collider:
 		return result.position
 
-	return Vector3.INF
+	return Vector3.ZERO
 
 func turn_to(event):
 	if is_moving:
