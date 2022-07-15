@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://UI/button_normal.png" type="Texture" id=1]
 [ext_resource path="res://UI/button_hover.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scripts/ButtonClose.gd" type="Script" id=7]
 [ext_resource path="res://UI/Themes/Dark.tres" type="Theme" id=8]
 [ext_resource path="res://Scenes/UI.gd" type="Script" id=9]
+[ext_resource path="res://Audio/ButtonPress.wav" type="AudioStream" id=10]
 
 [sub_resource type="StyleBoxTexture" id=5]
 texture = ExtResource( 5 )
@@ -106,6 +107,9 @@ custom_styles/disabled = SubResource( 4 )
 custom_styles/normal = SubResource( 1 )
 text = "Close"
 script = ExtResource( 7 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Panel"]
+stream = ExtResource( 10 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 visible = false

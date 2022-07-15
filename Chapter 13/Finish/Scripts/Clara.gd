@@ -30,7 +30,7 @@ func get_destination(event)->Vector3:
 	if result and result.collider:
 		return result.position
 
-	return Vector3.INF
+	return Vector3.ZERO
 
 func turn_to(event):
 	if is_moving:
@@ -48,10 +48,12 @@ func move_along(path:Array):
 	if !path or path_index == path.size():
 		is_moving = false
 		$Clara/AnimationPlayer.play("Idle")
+		$FootSteps.stream_paused = true
 		return
 	
 	is_moving = true
 	$Clara/AnimationPlayer.play("Walk")
+	$FootSteps.stream_paused = false
 	
 	var distance_to_next_step = global_transform.origin.distance_to(path[path_index])
 	var direction:Vector3 = path[path_index] - global_transform.origin

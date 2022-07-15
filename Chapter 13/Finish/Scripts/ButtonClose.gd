@@ -5,3 +5,4 @@ func _ready():
 	
 func on_pressed():
 	get_parent().visible = false
+	get_node("../AudioStreamPlayer").play()
