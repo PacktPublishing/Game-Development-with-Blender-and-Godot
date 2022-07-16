@@ -4,7 +4,7 @@ onready var camera:Camera = get_viewport().get_camera()
 onready var space_state:PhysicsDirectSpaceState = get_world().direct_space_state
 export(NodePath) onready var nav = get_node(nav) as Navigation
 const DISTANCE_THRESHOLD:= 1
-const SPEED:= 5
+const SPEED:= 3
 
 var path:= []
 var path_index:=0
