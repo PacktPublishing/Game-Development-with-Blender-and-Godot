@@ -215,19 +215,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.12202, 0, 4.60326 )
 
 [node name="Sconce5" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.67768, 2, 0 )
-is_lit = true
 
 [node name="Sconce6" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.05177, 2, -2.66926 )
-is_lit = true
 
 [node name="Sconce7" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 14.6434, 2, -2.66926 )
-is_lit = true
 
 [node name="Sconce8" parent="Sconces" instance=ExtResource( 27 )]
 transform = Transform( 1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, 14.6434, 2, 3.33074 )
-is_lit = true
 
 [node name="Parchment" parent="." instance=ExtResource( 39 )]
 transform = Transform( 0.849736, -0.527208, -2.3045e-08, 0, -4.37114e-08, 1, -0.527208, -0.849736, -3.71432e-08, 3.26906, -0.151482, 7.61709 )
@@ -488,15 +484,12 @@ transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 14.7737
 
 [node name="Candles_6" parent="Navigation/NavigationMeshInstance/Props" instance=ExtResource( 24 )]
 transform = Transform( -0.968929, 0, -0.247337, 0, 1, 0, 0.247337, 0, -0.968929, 9.81401, 0, -0.13631 )
-is_lit = true
 
 [node name="Candles_5" parent="Navigation/NavigationMeshInstance/Props" instance=ExtResource( 24 )]
 transform = Transform( 0.0191451, 0, 0.999817, 0, 1, 0, -0.999817, 0, 0.0191451, 0.994772, 0, 1.92874 )
-is_lit = true
 
 [node name="Candles_4" parent="Navigation/NavigationMeshInstance/Props" instance=ExtResource( 23 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.30802, 0, 3.74279 )
-is_lit = true
 
 [node name="Statue_Stag" parent="Navigation/NavigationMeshInstance/Props" instance=ExtResource( 25 )]
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3, 0, -1.36297 )

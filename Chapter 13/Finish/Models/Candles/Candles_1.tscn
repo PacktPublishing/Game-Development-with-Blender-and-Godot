@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Models/Candles/Candles_1.glb" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/LightSwitch.gd" type="Script" id=2]
+
+[sub_resource type="BoxShape" id=1]
 
 [node name="Candles_1" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
@@ -13,3 +15,10 @@ light_color = Color( 0.839216, 0.835294, 0.556863, 1 )
 light_indirect_energy = 1.5
 shadow_enabled = true
 omni_range = 3.0
+
+[node name="Area" type="Area" parent="." index="2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area" index="0"]
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]

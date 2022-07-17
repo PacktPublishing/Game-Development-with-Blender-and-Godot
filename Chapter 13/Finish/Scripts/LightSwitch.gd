@@ -8,3 +8,7 @@ func switch(condition):
 
 func _process(_delta: float) -> void:
 	$OmniLight.visible = is_lit
+
+func _on_Area_body_entered(body):
+	if body.name == "Player":
+		is_lit = true
