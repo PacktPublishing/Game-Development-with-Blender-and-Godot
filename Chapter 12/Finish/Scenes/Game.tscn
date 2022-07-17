@@ -5,7 +5,7 @@
 [node name="Game" type="Node"]
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.819152, -0.40558, 0.40558, 0, 0.707106, 0.707106, -0.573576, -0.579228, 0.579228, 11, 7, 8 )
+transform = Transform( 0.819152, -0.42625, 0.383797, 0, 0.66913, 0.743145, -0.573576, -0.608748, 0.548119, 11, 8, 8 )
 keep_aspect = 0
 fov = 97.0
 size = 6.0
