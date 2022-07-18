@@ -12,7 +12,7 @@
 [ext_resource path="res://Models/Rocks/RocksRight.glb" type="PackedScene" id=10]
 [ext_resource path="res://Models/Architecture/Arch_Round.glb" type="PackedScene" id=11]
 [ext_resource path="res://Models/Architecture/Wall_ArchRound_Overgrown.glb" type="PackedScene" id=12]
-[ext_resource path="res://Models/Architecture/Doors_RoundArch.glb" type="PackedScene" id=13]
+[ext_resource path="res://Models/Architecture/Doors_RoundArch.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Models/Rocks/RocksLeft.glb" type="PackedScene" id=14]
 [ext_resource path="res://Models/Barrel/Barrel.glb" type="PackedScene" id=15]
 [ext_resource path="res://Models/Trees/DeadTree_3.glb" type="PackedScene" id=16]
@@ -30,7 +30,7 @@
 [ext_resource path="res://Models/Architecture/Dock_Long.glb" type="PackedScene" id=28]
 [ext_resource path="res://Models/Architecture/Dock_Stairs.glb" type="PackedScene" id=29]
 [ext_resource path="res://Models/Boat/BoatWSail.glb" type="PackedScene" id=30]
-[ext_resource path="res://Models/Backpack/Backpack.glb" type="PackedScene" id=31]
+[ext_resource path="res://Models/Backpack/Backpack.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Models/Pots/Pot1_Broken.glb" type="PackedScene" id=32]
 [ext_resource path="res://Models/Pots/Pot3_Broken.glb" type="PackedScene" id=33]
 [ext_resource path="res://Models/Bush/Bush_Round.glb" type="PackedScene" id=34]
@@ -168,8 +168,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -5 )
 [node name="Arch_Round" parent="Walls" instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -5 )
 
-[node name="Doors_RoundArch" parent="Walls" instance=ExtResource( 13 )]
+[node name="Doors_RoundArch2" parent="Walls" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -5 )
+backpack = NodePath("../../Navigation/NavigationMeshInstance/Props/Backpack")
 
 [node name="SunkWalls" type="Spatial" parent="."]
 

@@ -10,5 +10,7 @@ func _process(_delta: float) -> void:
 	$OmniLight.visible = is_lit
 
 func _on_Area_body_entered(body):
-	if body.name == "Player":
+	if body.name == "Player":		
+		if is_lit == false:
+			$AudioStreamPlayer.play()
 		is_lit = true

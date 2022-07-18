@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Models/Candles/Candles_1.glb" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/LightSwitch.gd" type="Script" id=2]
+[ext_resource path="res://Audio/TorchWhoosh.ogg" type="AudioStream" id=3]
 
 [sub_resource type="BoxShape" id=1]
 
@@ -20,5 +21,8 @@ omni_range = 3.0
 
 [node name="CollisionShape" type="CollisionShape" parent="Area" index="0"]
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource( 3 )
 
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]

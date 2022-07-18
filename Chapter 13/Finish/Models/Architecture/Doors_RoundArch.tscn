@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Models/Architecture/Doors_RoundArch.glb" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Doors_RoundArch.gd" type="Script" id=2]
+[ext_resource path="res://Audio/LockFiddling.wav" type="AudioStream" id=3]
+[ext_resource path="res://Audio/OpenDoor.wav" type="AudioStream" id=4]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="Doors_RoundArch" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="LockFiddling" type="AudioStreamPlayer" parent="." index="2"]
+stream = ExtResource( 3 )
+
+[node name="OpenDoor" type="AudioStreamPlayer" parent="." index="3"]
+stream = ExtResource( 4 )
+
+[node name="Area" type="Area" parent="." index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Area" index="0"]
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
