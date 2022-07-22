@@ -29,7 +29,7 @@
 [ext_resource path="res://Models/Sconce/Sconce.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Models/Architecture/Dock_Long.glb" type="PackedScene" id=28]
 [ext_resource path="res://Models/Architecture/Dock_Stairs.glb" type="PackedScene" id=29]
-[ext_resource path="res://Models/Boat/BoatWSail.glb" type="PackedScene" id=30]
+[ext_resource path="res://Models/Boat/BoatWSail.tscn" type="PackedScene" id=30]
 [ext_resource path="res://Models/Backpack/Backpack.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Models/Pots/Pot1_Broken.glb" type="PackedScene" id=32]
 [ext_resource path="res://Models/Pots/Pot3_Broken.glb" type="PackedScene" id=33]
@@ -528,7 +528,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1, 5.5 )
 [node name="Dock_Stairs" parent="Navigation/NavigationMeshInstance/Dock" instance=ExtResource( 29 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -1.5, 8.9 )
 
-[node name="BoatWSail" parent="Navigation/NavigationMeshInstance/Dock" instance=ExtResource( 30 )]
+[node name="BoatWSail2" parent="Navigation/NavigationMeshInstance/Dock" instance=ExtResource( 30 )]
 transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.5, -1, 11 )
 
 [node name="Player" parent="." instance=ExtResource( 38 )]

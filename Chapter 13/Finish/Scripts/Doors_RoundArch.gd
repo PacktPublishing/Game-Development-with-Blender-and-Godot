@@ -19,6 +19,6 @@ func _on_Area_body_entered(body):
 			is_open = true
 		else:
 			$LockFiddling.play()
-
+		
 func load_level():
-	print("What level?")
+	EventBus.emit_signal("change_level", "Level-02.tscn")

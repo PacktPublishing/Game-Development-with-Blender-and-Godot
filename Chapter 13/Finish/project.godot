@@ -14,6 +14,10 @@ config/name="Chapter 13 - Finish"
 run/main_scene="res://Scenes/Game.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+EventBus="*res://Scripts/EventBus.gd"
+
 [display]
 
 window/size/width=1280
