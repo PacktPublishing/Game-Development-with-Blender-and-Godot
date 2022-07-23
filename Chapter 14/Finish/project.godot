@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Chapter 13 - Finish"
+config/name="Chapter 14 - Finish"
 run/main_scene="res://Scenes/Game.tscn"
 config/icon="res://icon.png"
 
@@ -22,6 +22,8 @@ EventBus="*res://Scripts/EventBus.gd"
 
 window/size/width=1280
 window/size/height=720
+window/size/resizable=false
+window/size/fullscreen=true
 
 [physics]
 

@@ -8,3 +8,7 @@ func change_level(level:String):
 	
 	$Level.remove_child($Level.get_child(0))
 	$Level.add_child(new_level)
+
+func _input(event):
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().quit()
