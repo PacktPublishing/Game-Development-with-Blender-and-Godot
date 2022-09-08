@@ -62,6 +62,3 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Kumsal Obuz**
 is a self taught, but veteran web developer with more than 15 years of experience in two different countries, leading teams and projects of various sizes. After several years of preparation and transition, he started his own game studio in August 2020. He launched a small puzzle strategy game at the end of 2020 and is currently working on an ambitious farming simulation game. He also likes to mentor, perhaps due to his genetic background since both of his parents are teachers, and because of his love of Godot, founded and still organizes the Godot Toronto Meetup group.
 
-
-## Other books by the author
-* [How to Build Android Apps with Kotlin](https://www.packtpub.com/product/how-to-build-android-apps-with-kotlin/9781838984113?_ga=2.143249015.356192373.1658578087-861421203.1658578087)
