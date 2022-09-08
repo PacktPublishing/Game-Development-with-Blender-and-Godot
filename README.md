@@ -60,5 +60,7 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 ## Get to Know the Author
 
 **Kumsal Obuz**
-is a self taught, but veteran web developer with more than 15 years of experience in two different countries, leading teams and projects of various sizes. After several years of preparation and transition, he started his own game studio in August 2020. He launched a small puzzle strategy game at the end of 2020 and is currently working on an ambitious farming simulation game. He also likes to mentor, perhaps due to his genetic background since both of his parents are teachers, and because of his love of Godot, founded and still organizes the Godot Toronto Meetup group.
-
+is a self-taught veteran web developer with more than 15 years of experience in two different countries, leading teams and projects of various sizes.
+After several years of preparation, he started his own game studio, Viroid Games,in August 2020. He then launched a small puzzle-strategy game at the end of 2020 and is currently working on an ambitious farming simulation game.
+He also enjoys mentoring, which runs in the family since both of his parents are teachers. In 2019, he founded and still organizes the Godot Toronto group on Discord.
+In his spare time, he likes reading history (mostly medieval) and science-fiction.
