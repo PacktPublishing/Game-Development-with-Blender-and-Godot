@@ -64,3 +64,7 @@ is a self-taught veteran web developer with more than 15 years of experience in 
 After several years of preparation, he started his own game studio, Viroid Games,in August 2020. He then launched a small puzzle-strategy game at the end of 2020 and is currently working on an ambitious farming simulation game.
 He also enjoys mentoring, which runs in the family since both of his parents are teachers. In 2019, he founded and still organizes the Godot Toronto group on Discord.
 In his spare time, he likes reading history (mostly medieval) and science-fiction.
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781801816021">https://packt.link/free-ebook/9781801816021 </a> </p>
