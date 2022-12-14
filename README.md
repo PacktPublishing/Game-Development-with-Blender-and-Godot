@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781801816021)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # Game Development with Blender and Godot
 
 <a href="https://www.packtpub.com/product/game-development-with-blender-and-godot/9781801816021"><img src="https://static.packt-cdn.com/products/9781801816021/cover/smaller" alt="Game Development with Blender and Godot" height="256px" align="right"></a>
